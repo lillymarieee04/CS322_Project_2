@@ -13,3 +13,5 @@ return render_template('index.html', cards=card_bucket_list)
 def add_card():
     ...
     card_bucket_list.append({...})
+
+errors = validate_input(name, cost, date)
