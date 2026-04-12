@@ -6,3 +6,5 @@ def index():
 
 card_bucket_list = []
 next_id = 1
+
+return render_template('index.html', cards=card_bucket_list)
