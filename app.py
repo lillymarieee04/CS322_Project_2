@@ -15,3 +15,5 @@ def add_card():
     card_bucket_list.append({...})
 
 errors = validate_input(name, cost, date)
+
+@app.route('/delete/<int:card_id>', methods=['POST'])

@@ -8,3 +8,5 @@
   <input name="date">
   <button>Add</button>
 </form>
+
+<form method="POST" action="{{ url_for('delete_card', card_id=card.id) }}">
