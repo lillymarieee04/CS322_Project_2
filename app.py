@@ -4,8 +4,13 @@ from datetime import datetime
 app = Flask(__name__)
 app.secret_key = 'magic'
 
-card_bucket_list = []
-next_id = 1
+card_bucket_list = [
+    {"id": 1, "name": "Black Lotus", "cost": 15000, "date": "2026-05-01"},
+    {"id": 2, "name": "Mox Sapphire", "cost": 8000, "date": "2026-06-10"},
+    {"id": 3, "name": "Time Walk", "cost": 7000, "date": "2026-07-15"},
+]
+
+next_id = 4
 
 def validate_input(name, cost, date):
     errors = []
